@@ -13,8 +13,8 @@ module "subnets" {
 }
 
 module "ec2" {
-  source         = "./modules/ec2"
-  vpc_id         = module.vpc.vpc_id
+  source           = "./modules/ec2"
+  vpc_id           = module.vpc.vpc_id
   public_subnet_id = module.subnets.public_subnet_ids[0]
-  instance_type  = var.instance_type
+  instance_type    = var.instance_type
 }
