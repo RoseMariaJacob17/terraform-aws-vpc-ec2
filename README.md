@@ -47,7 +47,6 @@ terraform destroy -auto-approve
 | private\_subnets | List of private subnet CIDRs   | list(string) | `["10.0.101.0/24","10.0.102.0/24","10.0.103.0/24"]` | no                     |
 | azs              | Availability Zones to use      | list(string) | `["us-east-1a","us-east-1b","us-east-1c"]`          | no                     |
 | instance\_type   | EC2 instance type              | string       | `"t2.micro"`                                        | no                     |
-| ami\_id          | AMI ID for EC2 instance        | string       | `""`                                                | yes (must be provided) |
 
 # OUTPUTS
 
