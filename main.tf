@@ -11,3 +11,10 @@ module "subnets" {
   public_subnet_cidrs   = var.public_subnet_cidrs
   private_subnet_cidrs  = var.private_subnet_cidrs
 }
+
+module "ec2" {
+  source         = "./modules/ec2"
+  vpc_id         = module.vpc.vpc_id
+  public_subnet_id = module.subnets.public_subnet_ids[0]
+  instance_type  = var.instance_type
+}
