@@ -1,4 +1,4 @@
-**Terraform AWS VPC + EC2 Infrastructure**
+# Terraform AWS VPC + EC2 Infrastructure
 
 # Overview
 This project provisions AWS infrastructure using Terraform.
